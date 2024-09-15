@@ -1,0 +1,48 @@
+[
+    {
+        "icon": "1",
+        "name": "Physics Chapter 1",
+        "url": "https://ncert.nic.in/textbook/pdf/leph101.pdf"
+    },
+    {
+        "icon": "2",
+        "name": "Physics Chapter 2",
+        "url": "https://ncert.nic.in/textbook/pdf/leph102.pdf"
+    },
+    {
+        "icon": "3",
+        "name": "Physics Chapter 3",
+        "url": "https://ncert.nic.in/textbook/pdf/leph103.pdf"
+    },
+    {
+        "icon": "4",
+        "name": "Physics Chapter 4",
+        "url": "https://ncert.nic.in/textbook/pdf/leph104.pdf"
+    },
+    {
+        "icon": "5",
+        "name": "Physics Chapter 5",
+        "url": "https://ncert.nic.in/textbook/pdf/leph105.pdf"
+    },
+    {
+        "icon": "6",
+        "name": "Physics Chapter 6",
+        "url": "https://ncert.nic.in/textbook/pdf/leph106.pdf"
+    },
+    {
+        "icon": "7",
+        "name": "Physics Chapter 7",
+        "url": "https://ncert.nic.in/textbook/pdf/leph107.pdf"
+    },
+    {
+        "icon": "8",
+        "name": "Physics Chapter 8",
+        "url": "https://ncert.nic.in/textbook/pdf/leph108.pdf"
+    },
+    {
+        "icon": "9",
+        "name": "Physics Chapter 9",
+        "url": "https://ncert.nic.in/textbook/pdf/leph109.pdf"
+    }
+
+]

@@ -1,0 +1,25 @@
+<resources>
+
+    <string name="home">Home</string>
+    <string name="change_theme">Change Theme</string>
+    <string name="about">About app</string>
+    <string name="feedback">Feedback</string>
+    <string name="rate">Rate App</string>
+    <string name="more">More Apps</string>
+    <string name="share">Share</string>
+    <string name="exit">Exit</string>
+
+    <string name="exit_prompt">Do you really want to exit?</string>
+    <string name="delete_prompt">Do you really want to delete this item?</string>
+    <string name="delete">Delete</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="cancel_update">Update canceled</string>
+    <string name="success_update">Update success!</string>
+    <string name="failed_update">Update Failed!</string>
+
+    <string name="openDrawer">Open Drawer</string>
+    <string name="closeDrawer">Close Drawer</string>
+
+</resources>

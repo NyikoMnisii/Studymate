@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="app_name">StudyMate</string>
+    <string name="more_apps_url">https://play.google.com/store/apps/dev?id=5373872722690202090</string>
+    <string name="developer_email">nyikodeartkid@gmail.com</string>
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+
+</resources>

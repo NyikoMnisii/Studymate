@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--primary theme-->
+    <color name="color_light_primary">#FF5722</color>
+    <color name="color_light_status_bar">#D8491C</color>
+    <color name="color_light_accent">#E54B1A</color>
+    <color name="color_light_background">#FAFAFA</color>
+    <color name="color_light_text">#212121</color>
+    <color name="color_light_icon">@color/color_light_primary</color>
+
+    <!--dark theme color-->
+    <color name="color_dark_primary">#E3E3E3</color>
+    <color name="color_dark_status_bar">#353434</color>
+    <color name="color_dark_accent">#272626</color>
+    <color name="color_dark_background">#252525</color>
+    <color name="color_dark_text">#FFFFFF</color>
+    <color name="color_dark_icon">#E8E8E8</color>
+
+    <!--others-->
+    <color name="text_icon_color">@color/color_light_icon</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_black">#000000</color>
+
+</resources>
