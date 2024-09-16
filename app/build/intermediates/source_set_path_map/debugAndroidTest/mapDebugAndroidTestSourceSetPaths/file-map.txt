@@ -1,0 +1,6 @@
+com.app.studymate.test.app-jetified-annotation-experimental-1.1.0-0 C:\Users\Cash\.gradle\caches\transforms-4\1fc2e1791bd31800e8e58011aa74b315\transformed\jetified-annotation-experimental-1.1.0\res
+com.app.studymate.test.app-jetified-core-1.5.0-1 C:\Users\Cash\.gradle\caches\transforms-4\a64b245776234d970b3e197a59be69d2\transformed\jetified-core-1.5.0\res
+com.app.studymate.test.app-androidTest-2 C:\Users\Cash\Documents\BICT\Business\codecanyon-jYSw9IYK-pdf-study-material-app\Studymate\app\build\generated\res\resValues\androidTest\debug
+com.app.studymate.test.app-mergeDebugAndroidTestResources-3 C:\Users\Cash\Documents\BICT\Business\codecanyon-jYSw9IYK-pdf-study-material-app\Studymate\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.app.studymate.test.app-mergeDebugAndroidTestResources-4 C:\Users\Cash\Documents\BICT\Business\codecanyon-jYSw9IYK-pdf-study-material-app\Studymate\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.app.studymate.test.app-debugAndroidTest-5 C:\Users\Cash\Documents\BICT\Business\codecanyon-jYSw9IYK-pdf-study-material-app\Studymate\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

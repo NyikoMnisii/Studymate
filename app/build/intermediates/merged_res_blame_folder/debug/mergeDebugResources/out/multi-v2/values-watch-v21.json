@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.app.studymate.app-mergeDebugResources-53:/values-watch-v21/values-watch-v21.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Cash\\.gradle\\caches\\transforms-4\\d16430e646b8145b257d7e8822f373ba\\transformed\\appcompat-1.5.1\\res\\values-watch-v21\\values-watch-v21.xml",
+                    "from": {
+                        "startLines": "2,6,10",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,271,499",
+                        "endLines": "5,9,13",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "266,494,724"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -24,7 +24,7 @@ public class AdManager {
     LegacyGDPR legacyGDPR;
     GDPR gdpr;
 
-    public AdManager(Activity activity) {
+    public AdManager() {
         this.activity = activity;
         this.legacyGDPR = new LegacyGDPR(activity);
         this.gdpr = new GDPR(activity);

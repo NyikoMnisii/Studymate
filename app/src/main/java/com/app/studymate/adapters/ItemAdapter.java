@@ -21,7 +21,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.app.studymate.Config;
 import com.app.studymate.R;
-import com.app.studymate.activities.MainActivity;
 import com.app.studymate.activities.PdfViewerActivity;
 import com.app.studymate.models.ItemModel;
 import com.app.studymate.tools.AdManager;
@@ -48,7 +47,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.MyViewHolder> 
     public ItemAdapter(Context context, ArrayList<ItemModel> mList) {
         this.mList = mList;
         this.context = context;
-        adManager = new AdManager((MainActivity) context);
+        adManager = new AdManager();
         adManager.initAds();
         adManager.loadInterstitialAd();
     }

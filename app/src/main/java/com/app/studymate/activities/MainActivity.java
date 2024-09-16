@@ -1,5 +1,19 @@
-package com.app.pdfebook.activities;
+package com.app.studymate.activities;
 
+
+import android.app.SearchManager;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentSender;
+import android.content.SharedPreferences;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
 
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
@@ -13,34 +27,19 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
-import android.app.SearchManager;
-import android.content.Context;
-import android.content.Intent;
-import android.content.IntentSender;
-import android.content.SharedPreferences;
-import android.graphics.drawable.ColorDrawable;
-import android.os.Bundle;
-import android.os.Handler;
-import android.os.Looper;
-import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.view.WindowManager;
-
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.app.pdfebook.BuildConfig;
-import com.app.pdfebook.Config;
-import com.app.pdfebook.adapters.ItemAdapter;
-import com.app.pdfebook.database.SharedPref;
-import com.app.pdfebook.models.ItemModel;
-import com.app.pdfebook.R;
-import com.app.pdfebook.tools.AdManager;
-import com.app.pdfebook.tools.Utilities;
+import com.app.studymate.BuildConfig;
+import com.app.studymate.Config;
+import com.app.studymate.R;
+import com.app.studymate.adapters.ItemAdapter;
+import com.app.studymate.database.SharedPref;
+import com.app.studymate.models.ItemModel;
+import com.app.studymate.tools.AdManager;
+import com.app.studymate.tools.Utilities;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.play.core.appupdate.AppUpdateInfo;
 import com.google.android.play.core.appupdate.AppUpdateManager;
@@ -50,12 +49,12 @@ import com.google.android.play.core.install.model.UpdateAvailability;
 import com.google.android.play.core.review.ReviewInfo;
 import com.google.android.play.core.review.ReviewManager;
 import com.google.android.play.core.review.ReviewManagerFactory;
-import com.google.android.play.core.tasks.Task;
 import com.solodroid.push.sdk.provider.OneSignalPush;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
 import java.util.ArrayList;
 
 import xposed.app.utils.ToastManager;
@@ -114,7 +113,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     private void setupAds() {
-        adManager = new AdManager(this);
+        adManager = new AdManager();
         adManager.initAds();
         adManager.updateConsentStatus();
         adManager.loadBannerAd(R.id.bannerAd);
@@ -426,9 +425,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     public void exitDialog() {
         LayoutInflater inflater = LayoutInflater.from(this);
+
+        // Inflate the layout to create the view
         View view = inflater.inflate(R.layout.custom_exit_dialog, null);
+
+        // Initialize adManager if not already done
+        adManager = new AdManager();
+
+        // Load the native ad view
         adManager.loadNativeAdView(view, 1);
 
+        // Create and show the AlertDialog
         AlertDialog.Builder dialog = new AlertDialog.Builder(this);
         dialog.setView(view);
         dialog.setCancelable(false);
@@ -442,8 +449,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         view.findViewById(R.id.btn_cancel).setOnClickListener(v -> {
             alertDialog.dismiss();
         });
-
     }
+
 
     @Override
     public void onBackPressed() {
@@ -455,6 +462,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
 }
+
 
 
 
