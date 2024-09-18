@@ -77,7 +77,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private AdManager adManager;
     private AppUpdateManager appUpdateManager;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -112,12 +111,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
     }
 
+
+
     private void setupAds() {
-        adManager = new AdManager();
+        adManager = new AdManager(this);  // Pass the MainActivity context
         adManager.initAds();
         adManager.updateConsentStatus();
         adManager.loadBannerAd(R.id.bannerAd);
     }
+
+
 
     private void setupOneSignal() {
         new OneSignalPush.Builder(this).requestNotificationPermission();
@@ -430,7 +433,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         View view = inflater.inflate(R.layout.custom_exit_dialog, null);
 
         // Initialize adManager if not already done
-        adManager = new AdManager();
+        adManager = new AdManager(this);
 
         // Load the native ad view
         adManager.loadNativeAdView(view, 1);

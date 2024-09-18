@@ -3,6 +3,7 @@ package com.app.studymate.adapters;
 import static com.app.studymate.Config.USE_RANDOM_COLORS_FOR_TEXT_ICONS;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Typeface;
@@ -47,10 +48,11 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.MyViewHolder> 
     public ItemAdapter(Context context, ArrayList<ItemModel> mList) {
         this.mList = mList;
         this.context = context;
-        adManager = new AdManager();
+        adManager = new AdManager((Activity) context); // Cast context to Activity
         adManager.initAds();
         adManager.loadInterstitialAd();
     }
+
 
     @NonNull
     @Override

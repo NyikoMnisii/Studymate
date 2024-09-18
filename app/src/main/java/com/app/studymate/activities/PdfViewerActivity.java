@@ -66,7 +66,7 @@ public class PdfViewerActivity extends AppCompatActivity {
         pdfView.setOnClickListener(v -> toggleActionBarVisibility());
 
         frameLayout = findViewById(R.id.adView);
-        AdManager adManager = new AdManager();
+        AdManager adManager = new AdManager(this);
         adManager.initAds();
         adManager.loadBannerAd(R.id.bannerAd);
         adManager.loadInterstitialAd();

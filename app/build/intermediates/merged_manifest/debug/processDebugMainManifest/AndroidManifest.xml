@@ -71,7 +71,17 @@
         </intent>
         <!-- End of CustomTabsService -->
         <package android:name="com.facebook.katana" />
+
+        <intent>
+            <action android:name="android.media.browse.MediaBrowserService" />
+        </intent>
     </queries>
+
+    <permission
+        android:name="com.app.studymate.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.app.studymate.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <application
         android:name="com.app.studymate.activities.MyApplication"

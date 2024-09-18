@@ -13,6 +13,9 @@ public class SharedPref {
     private final SharedPreferences.Editor editor;
 
     public SharedPref(Context context) {
+        if (context == null) {
+            throw new IllegalArgumentException("Context cannot be null");
+        }
         this.context = context;
         sharedPreferences = context.getSharedPreferences(context.getString(R.string.app_name), Context.MODE_PRIVATE);
         editor = sharedPreferences.edit();

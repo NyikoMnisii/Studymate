@@ -24,15 +24,15 @@ public class AdManager {
     LegacyGDPR legacyGDPR;
     GDPR gdpr;
 
-    public AdManager() {
+    // Constructor to initialize the activity context and other components
+    public AdManager(Activity activity) {
+        if (activity == null) {
+            throw new IllegalArgumentException("Activity cannot be null");
+        }
         this.activity = activity;
+        this.sharedPref = new SharedPref(activity);  // Initialize SharedPref with Activity context
         this.legacyGDPR = new LegacyGDPR(activity);
         this.gdpr = new GDPR(activity);
-        this.sharedPref = new SharedPref(activity);
-        adNetwork = new AdNetwork.Initialize(activity);
-        bannerAd = new BannerAd.Builder(activity);
-        interstitialAd = new InterstitialAd.Builder(activity);
-        nativeAdView = new NativeAdFragment.Builder(activity);
     }
 
     public void initAds() {

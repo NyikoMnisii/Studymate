@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.app.studymate.app-mergeDebugResources-53:/values-v26/values-v26.xml",
+            "outputFile": "com.app.studymate.app-mergeDebugResources-54:/values-v26/values-v26.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Cash\\.gradle\\caches\\transforms-4\\d16430e646b8145b257d7e8822f373ba\\transformed\\appcompat-1.5.1\\res\\values-v26\\values-v26.xml",
+                    "source": "C:\\Users\\Cash\\.gradle\\caches\\transforms-4\\a693e3eaf68268bfeba46061d4340d3d\\transformed\\appcompat-1.5.1\\res\\values-v26\\values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",

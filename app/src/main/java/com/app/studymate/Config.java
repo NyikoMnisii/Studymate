@@ -10,7 +10,7 @@ public class Config {
 
 
     /** App Configuration */
-    public static final String API_KEY = "7c8a798f8e1f71f1130c4734fd3117e5d477934004885bb71c3a5c98b0bc5e60";
+    public static final String API_KEY = "6087d76ec1e9be1b68e57a61daccac95243acdda0a9a3bc31b0baa757f4951f4";
     public static final boolean USE_REMOTE_JSON = true;
     public static final String REMOTE_JSON_URL = "https://demo.poshnool.com/ebook/config.json";
     public static final boolean USE_RANDOM_COLORS_FOR_TEXT_ICONS = false;
