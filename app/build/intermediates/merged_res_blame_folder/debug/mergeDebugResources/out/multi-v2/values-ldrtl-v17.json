@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.app.studymate.app-mergeDebugResources-54:/values-ldrtl-v17/values-ldrtl-v17.xml",
+            "outputFile": "com.app.studymate.app-mergeDebugResources-55:/values-ldrtl-v17/values-ldrtl-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Cash\\.gradle\\caches\\transforms-4\\fbd3d47cbc4eb5fd34f78fcdfa0d93e7\\transformed\\material-1.7.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
+                    "source": "C:\\Users\\Cash\\.gradle\\caches\\transforms-4\\52477fa11ca7a66414b6b71ecd0f5fa4\\transformed\\material-1.7.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

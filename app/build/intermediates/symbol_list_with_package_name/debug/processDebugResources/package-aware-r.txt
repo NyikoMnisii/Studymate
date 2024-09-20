@@ -4288,6 +4288,7 @@ string fallback_menu_item_open_in_browser
 string fallback_menu_item_share_link
 string fcm_fallback_notification_channel_label
 string feedback
+string gcm_defaultSenderId
 string gmts_ad_format_load_success_title
 string gmts_ad_load
 string gmts_ad_load_in_progress_title
@@ -4400,6 +4401,10 @@ string gmts_yield_group_details_title
 string gmts_yield_group_format_label_format
 string gmts_yield_groups
 string gmts_yield_partner_not_tested_message
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
 string hide_bottom_view_on_scroll_behavior
 string home
 string ic_media_route_learn_more_accessibility
@@ -4559,6 +4564,7 @@ string path_password_strike_through
 string permission_not_available_message
 string permission_not_available_open_settings_option
 string permission_not_available_title
+string project_id
 string rate
 string s1
 string s2

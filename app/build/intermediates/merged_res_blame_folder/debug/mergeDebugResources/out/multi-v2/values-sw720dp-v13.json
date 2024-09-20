@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.app.studymate.app-mergeDebugResources-54:/values-sw720dp-v13/values-sw720dp-v13.xml",
+            "outputFile": "com.app.studymate.app-mergeDebugResources-55:/values-sw720dp-v13/values-sw720dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Cash\\.gradle\\caches\\transforms-4\\81435336a310c212481b7e8e60f50946\\transformed\\mediarouter-1.7.0\\res\\values-sw720dp-v13\\values-sw720dp-v13.xml",
+                    "source": "C:\\Users\\Cash\\.gradle\\caches\\transforms-4\\928bbbec9edab95eb819da5446b7a028\\transformed\\mediarouter-1.7.0\\res\\values-sw720dp-v13\\values-sw720dp-v13.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

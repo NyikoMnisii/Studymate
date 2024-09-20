@@ -1,3 +1,0 @@
-com.app.studymate.test
-style WhiteBackgroundDialogTheme
-style WhiteBackgroundTheme

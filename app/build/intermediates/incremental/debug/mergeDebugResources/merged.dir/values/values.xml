@@ -1957,6 +1957,7 @@
     <string name="fallback_menu_item_share_link">Share link</string>
     <string name="fcm_fallback_notification_channel_label">Miscellaneous</string>
     <string name="feedback">Feedback</string>
+    <string name="gcm_defaultSenderId" translatable="false">309070412088</string>
     <string name="gmts_ad_format_load_success_title">%1$s ad loaded successfully</string>
     <string name="gmts_ad_load">Ad Load</string>
     <string name="gmts_ad_load_in_progress_title">Loading ad...</string>
@@ -2075,6 +2076,10 @@
     <string name="gmts_yield_group_format_label_format">%1$s yield group</string>
     <string name="gmts_yield_groups">Yield Groups</string>
     <string name="gmts_yield_partner_not_tested_message">Make sure this yield partner is set up correctly by loading at least one ad. Use test ads instead of real ads to avoid policy violations.</string>
+    <string name="google_api_key" translatable="false">AIzaSyA6aZhi-p7qDDQQYn6O1auUrE_a7n847rM</string>
+    <string name="google_app_id" translatable="false">1:309070412088:android:9f6fad560813da1af4e9cd</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyA6aZhi-p7qDDQQYn6O1auUrE_a7n847rM</string>
+    <string name="google_storage_bucket" translatable="false">studymate-a057d.appspot.com</string>
     <string name="hide_bottom_view_on_scroll_behavior" translatable="false">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
     <string name="home">Home</string>
     <string name="ic_media_route_learn_more_accessibility">Learn how to cast</string>
@@ -2257,6 +2262,7 @@
     <string name="permission_not_available_message">You have previously denied %s. Please go to settings to enable.</string>
     <string name="permission_not_available_open_settings_option">Settings</string>
     <string name="permission_not_available_title">%s Not Available</string>
+    <string name="project_id" translatable="false">studymate-a057d</string>
     <string name="rate">Rate App</string>
     <string name="s1">Save image</string>
     <string name="s2">"Allow Ad to store image in Picture gallery?"</string>
