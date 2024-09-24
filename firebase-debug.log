@@ -1,0 +1,21 @@
+[debug] [2024-09-24T09:47:01.818Z] ----------------------------------------------------------------------
+[debug] [2024-09-24T09:47:01.821Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Cash\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-09-24T09:47:01.821Z] CLI Version:   13.19.0
+[debug] [2024-09-24T09:47:01.821Z] Platform:      win32
+[debug] [2024-09-24T09:47:01.821Z] Node Version:  v20.12.0
+[debug] [2024-09-24T09:47:01.821Z] Time:          Tue Sep 24 2024 11:47:01 GMT+0200 (South Africa Standard Time)
+[debug] [2024-09-24T09:47:01.822Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-09-24T09:47:01.828Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-24T09:47:01.828Z] > authorizing via signed-in user (nyikodeartkid@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Cash\Documents\BICT\Business\codecanyon-jYSw9IYK-pdf-study-material-app\Studymate
+
