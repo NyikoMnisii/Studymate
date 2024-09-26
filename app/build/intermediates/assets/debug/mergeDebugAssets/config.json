@@ -1,57 +1,38 @@
 [
     {
-        "icon": "1",
-        "name": "Physics Chapter 1",
-        "url": "https://ncert.nic.in/textbook/pdf/leph101.pdf"
+        "icon": "M",
+        "name": "Mathematics P1 MEMO KZN JUNE 2024",
+        "url": "https://drive.google.com/uc?id=1SKgtwRIww08UfVC0-gDg141X3SxFkVtO"
     },
     {
-        "icon": "2",
-        "name": "Physics Chapter 2",
-        "url": "https://ncert.nic.in/textbook/pdf/leph102.pdf"
+        "icon": "M",
+        "name": "Mathematics P1 KZN JUNE 2024",
+        "url": "https://drive.google.com/uc?id=1N0YwuLvMIplD-vNv-jYtcy7gLHyH1T1V"
     },
     {
-        "icon": "3",
-        "name": "Physics Chapter 3",
-        "url": "https://ncert.nic.in/textbook/pdf/leph103.pdf"
+        "icon": "M",
+        "name": "Mathematics P2 KZN JUNE 2024",
+        "url": "https://drive.google.com/uc?id=1nM60Q6EDPsXBXMg4aok-Q4JlFactybb2"
     },
     {
-        "icon": "4",
-        "name": "Physics Chapter 4",
-        "url": "https://ncert.nic.in/textbook/pdf/leph104.pdf"
-    },
-    {
-        "icon": "5",
-        "name": "Physics Chapter 5",
-        "url": "https://ncert.nic.in/textbook/pdf/leph105.pdf"
-    },
-    {
-        "icon": "6",
-        "name": "Physics Chapter 6",
-        "url": "https://ncert.nic.in/textbook/pdf/leph106.pdf"
-    },
-    {
-        "icon": "7",
-        "name": "Physics Chapter 7",
-        "url": "https://ncert.nic.in/textbook/pdf/leph107.pdf"
-    },
-    {
-        "icon": "8",
-        "name": "Physics Chapter 8",
-        "url": "https://ncert.nic.in/textbook/pdf/leph108.pdf"
-    },
-    {
-        "icon": "9",
-        "name": "Physics Chapter 9",
-        "url": "https://ncert.nic.in/textbook/pdf/leph109.pdf"
+        "icon": "M",
+        "name": "Mathematics P2 MEMO KZN JUNE 2024",
+        "url": "https://drive.google.com/uc?id=1wF7PO8R7K2R7KekpZUpVn7wX3o5MDO2y"
     },
     {
         "icon": "M",
         "name": "Mathematics P1 MAY-JUNE 2023",
-        "url": "https://drive.google.com/file/d/1YpNztH9QpGN05T0brM_KJu-MPc59EYbt/view?usp=sharing"
+        "url": "https://drive.google.com/uc?id=1YpNztH9QpGN05T0brM_KJu-MPc59EYbt"
     },
     {
         "icon": "M",
         "name": "Mathematics P1 MEMO MAY-JUNE 2023",
         "url": "https://drive.google.com/uc?id=1Ue1u-FEYXRRPbdEvYAIz74-wkVDbIiAL"
+    },
+    {
+        "icon": "L",
+        "name": "MTG Life sciences Study Guide",
+        "url": "https://drive.google.com/uc?id=1Jo3EnBAY1eUtDfmDVP3aQVtvjfXn9pc-"
+
     }
 ]

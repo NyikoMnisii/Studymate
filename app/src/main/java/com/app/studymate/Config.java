@@ -49,3 +49,5 @@ public class Config {
 
 
 }
+//https://drive.google.com/uc?id=
+//type of link to use in config.json
