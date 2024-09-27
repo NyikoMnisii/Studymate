@@ -14,6 +14,12 @@
             android:title="@string/change_theme" />
 
         <item
+            android:id="@+id/action_timetable"
+            android:icon="@drawable/routine"
+            android:title="@string/time_table" />
+
+
+        <item
             android:id="@+id/action_feedback"
             android:icon="@drawable/review"
             android:title="@string/feedback" />
@@ -37,6 +43,7 @@
             android:id="@+id/action_exit"
             android:icon="@drawable/exit"
             android:title="@string/exit" />
+
 
     </group>
 

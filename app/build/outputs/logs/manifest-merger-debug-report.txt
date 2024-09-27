@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Cash\Documents\BICT\Business\codecanyon-jYSw9IYK-pdf-study-material-app\Studymate\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\Users\Cash\Documents\BICT\Business\codecanyon-jYSw9IYK-pdf-study-material-app\Studymate\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\Users\Cash\Documents\BICT\Business\codecanyon-jYSw9IYK-pdf-study-material-app\Studymate\app\src\main\AndroidManifest.xml:2:1-44:12
-INJECTED from C:\Users\Cash\Documents\BICT\Business\codecanyon-jYSw9IYK-pdf-study-material-app\Studymate\app\src\main\AndroidManifest.xml:2:1-44:12
+ADDED from C:\Users\Cash\Documents\BICT\Business\codecanyon-jYSw9IYK-pdf-study-material-app\Studymate\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from C:\Users\Cash\Documents\BICT\Business\codecanyon-jYSw9IYK-pdf-study-material-app\Studymate\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from C:\Users\Cash\Documents\BICT\Business\codecanyon-jYSw9IYK-pdf-study-material-app\Studymate\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from C:\Users\Cash\Documents\BICT\Business\codecanyon-jYSw9IYK-pdf-study-material-app\Studymate\app\src\main\AndroidManifest.xml:2:1-49:12
 MERGED from [tools-library.aar] C:\Users\Cash\.gradle\caches\transforms-4\6c1d3d0e119af24ffbc53b297a5bb2a0\transformed\jetified-tools-library\AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.android.ads:mediation-test-suite:3.0.0] C:\Users\Cash\.gradle\caches\transforms-4\321cf00b5d4fbd9d76188fe3b925df15\transformed\jetified-mediation-test-suite-3.0.0\AndroidManifest.xml:2:1-35:12
 MERGED from [com.github.solodroidx:simple-ads-sdk:1.0.2] C:\Users\Cash\.gradle\caches\transforms-4\32d9d151b4ed2f61d3cff82056feb81b\transformed\jetified-simple-ads-sdk-1.0.2\AndroidManifest.xml:2:1-25:12
@@ -196,8 +196,8 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.1.2] C:
 	android:name
 		ADDED from C:\Users\Cash\Documents\BICT\Business\codecanyon-jYSw9IYK-pdf-study-material-app\Studymate\app\src\main\AndroidManifest.xml:6:22-76
 application
-ADDED from C:\Users\Cash\Documents\BICT\Business\codecanyon-jYSw9IYK-pdf-study-material-app\Studymate\app\src\main\AndroidManifest.xml:8:5-42:19
-INJECTED from C:\Users\Cash\Documents\BICT\Business\codecanyon-jYSw9IYK-pdf-study-material-app\Studymate\app\src\main\AndroidManifest.xml:8:5-42:19
+ADDED from C:\Users\Cash\Documents\BICT\Business\codecanyon-jYSw9IYK-pdf-study-material-app\Studymate\app\src\main\AndroidManifest.xml:8:5-47:19
+INJECTED from C:\Users\Cash\Documents\BICT\Business\codecanyon-jYSw9IYK-pdf-study-material-app\Studymate\app\src\main\AndroidManifest.xml:8:5-47:19
 MERGED from [com.google.android.ads:mediation-test-suite:3.0.0] C:\Users\Cash\.gradle\caches\transforms-4\321cf00b5d4fbd9d76188fe3b925df15\transformed\jetified-mediation-test-suite-3.0.0\AndroidManifest.xml:9:5-33:19
 MERGED from [com.google.android.ads:mediation-test-suite:3.0.0] C:\Users\Cash\.gradle\caches\transforms-4\321cf00b5d4fbd9d76188fe3b925df15\transformed\jetified-mediation-test-suite-3.0.0\AndroidManifest.xml:9:5-33:19
 MERGED from [com.github.solodroidx:simple-ads-sdk:1.0.2] C:\Users\Cash\.gradle\caches\transforms-4\32d9d151b4ed2f61d3cff82056feb81b\transformed\jetified-simple-ads-sdk-1.0.2\AndroidManifest.xml:12:5-23:19
@@ -334,12 +334,20 @@ ADDED from C:\Users\Cash\Documents\BICT\Business\codecanyon-jYSw9IYK-pdf-study-m
 		ADDED from C:\Users\Cash\Documents\BICT\Business\codecanyon-jYSw9IYK-pdf-study-material-app\Studymate\app\src\main\AndroidManifest.xml:35:13-83
 	android:name
 		ADDED from C:\Users\Cash\Documents\BICT\Business\codecanyon-jYSw9IYK-pdf-study-material-app\Studymate\app\src\main\AndroidManifest.xml:34:13-57
-meta-data#com.google.android.gms.ads.APPLICATION_ID
-ADDED from C:\Users\Cash\Documents\BICT\Business\codecanyon-jYSw9IYK-pdf-study-material-app\Studymate\app\src\main\AndroidManifest.xml:38:9-40:52
-	android:value
-		ADDED from C:\Users\Cash\Documents\BICT\Business\codecanyon-jYSw9IYK-pdf-study-material-app\Studymate\app\src\main\AndroidManifest.xml:40:13-49
+activity#com.app.studymate.activities.TimetableActivity
+ADDED from C:\Users\Cash\Documents\BICT\Business\codecanyon-jYSw9IYK-pdf-study-material-app\Studymate\app\src\main\AndroidManifest.xml:38:9-40:39
+	android:exported
+		ADDED from C:\Users\Cash\Documents\BICT\Business\codecanyon-jYSw9IYK-pdf-study-material-app\Studymate\app\src\main\AndroidManifest.xml:40:13-36
+	android:configChanges
+		ADDED from C:\Users\Cash\Documents\BICT\Business\codecanyon-jYSw9IYK-pdf-study-material-app\Studymate\app\src\main\AndroidManifest.xml:39:13-83
 	android:name
-		ADDED from C:\Users\Cash\Documents\BICT\Business\codecanyon-jYSw9IYK-pdf-study-material-app\Studymate\app\src\main\AndroidManifest.xml:39:13-69
+		ADDED from C:\Users\Cash\Documents\BICT\Business\codecanyon-jYSw9IYK-pdf-study-material-app\Studymate\app\src\main\AndroidManifest.xml:38:19-63
+meta-data#com.google.android.gms.ads.APPLICATION_ID
+ADDED from C:\Users\Cash\Documents\BICT\Business\codecanyon-jYSw9IYK-pdf-study-material-app\Studymate\app\src\main\AndroidManifest.xml:43:9-45:52
+	android:value
+		ADDED from C:\Users\Cash\Documents\BICT\Business\codecanyon-jYSw9IYK-pdf-study-material-app\Studymate\app\src\main\AndroidManifest.xml:45:13-49
+	android:name
+		ADDED from C:\Users\Cash\Documents\BICT\Business\codecanyon-jYSw9IYK-pdf-study-material-app\Studymate\app\src\main\AndroidManifest.xml:44:13-69
 uses-sdk
 INJECTED from C:\Users\Cash\Documents\BICT\Business\codecanyon-jYSw9IYK-pdf-study-material-app\Studymate\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Cash\Documents\BICT\Business\codecanyon-jYSw9IYK-pdf-study-material-app\Studymate\app\src\main\AndroidManifest.xml

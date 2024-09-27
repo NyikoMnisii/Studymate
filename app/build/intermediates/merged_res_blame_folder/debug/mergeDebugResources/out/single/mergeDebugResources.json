@@ -20,20 +20,12 @@
         "source": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-main-59:\\mipmap-xxxhdpi\\ic_launcher_foreground.webp"
     },
     {
-        "merged": "com.app.studymate.app-debug-57:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.app.studymate.app-main-59:/mipmap-xxhdpi/ic_launcher_round.webp"
-    },
-    {
         "merged": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-debug-57:\\mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-main-59:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
         "merged": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-debug-57:\\menu_main_menu.xml.flat",
         "source": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-main-59:\\menu\\main_menu.xml"
-    },
-    {
-        "merged": "com.app.studymate.app-debug-57:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.app.studymate.app-main-59:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
         "merged": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-debug-57:\\layout_custom_delete_dialog.xml.flat",
@@ -46,10 +38,6 @@
     {
         "merged": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-debug-57:\\drawable_search.xml.flat",
         "source": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-main-59:\\drawable\\search.xml"
-    },
-    {
-        "merged": "com.app.studymate.app-debug-57:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
-        "source": "com.app.studymate.app-main-59:/mipmap-mdpi/ic_launcher_foreground.webp"
     },
     {
         "merged": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-debug-57:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
@@ -72,16 +60,8 @@
         "source": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-main-59:\\layout\\activity_pdf_viewer.xml"
     },
     {
-        "merged": "com.app.studymate.app-debug-57:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
-        "source": "com.app.studymate.app-main-59:/mipmap-xxhdpi/ic_launcher_foreground.webp"
-    },
-    {
-        "merged": "com.app.studymate.app-debug-57:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
-        "source": "com.app.studymate.app-main-59:/mipmap-hdpi/ic_launcher_foreground.webp"
-    },
-    {
-        "merged": "com.app.studymate.app-debug-57:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
-        "source": "com.app.studymate.app-main-59:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
+        "merged": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-debug-57:\\layout_subject_input.xml.flat",
+        "source": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-main-59:\\layout\\subject_input.xml"
     },
     {
         "merged": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-debug-57:\\drawable_exit.xml.flat",
@@ -108,10 +88,6 @@
         "source": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-main-59:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.app.studymate.app-debug-57:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.app.studymate.app-main-59:/mipmap-mdpi/ic_launcher_round.webp"
-    },
-    {
         "merged": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-debug-57:\\drawable_more.xml.flat",
         "source": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-main-59:\\drawable\\more.xml"
     },
@@ -122,10 +98,6 @@
     {
         "merged": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-debug-57:\\layout_custom_banner_ad.xml.flat",
         "source": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-main-59:\\layout\\custom_banner_ad.xml"
-    },
-    {
-        "merged": "com.app.studymate.app-debug-57:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.app.studymate.app-main-59:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
         "merged": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-debug-57:\\drawable_bg_rounded_dark.xml.flat",
@@ -144,10 +116,6 @@
         "source": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-main-59:\\mipmap-mdpi\\ic_launcher_foreground.webp"
     },
     {
-        "merged": "com.app.studymate.app-debug-57:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.app.studymate.app-main-59:/mipmap-mdpi/ic_launcher.webp"
-    },
-    {
         "merged": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-debug-57:\\mipmap-hdpi_ic_launcher_foreground.webp.flat",
         "source": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-main-59:\\mipmap-hdpi\\ic_launcher_foreground.webp"
     },
@@ -156,24 +124,8 @@
         "source": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-main-59:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.app.studymate.app-debug-57:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.app.studymate.app-main-59:/mipmap-xxhdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "com.app.studymate.app-debug-57:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.app.studymate.app-main-59:/mipmap-xhdpi/ic_launcher.webp"
-    },
-    {
         "merged": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-debug-57:\\drawable_review.xml.flat",
         "source": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-main-59:\\drawable\\review.xml"
-    },
-    {
-        "merged": "com.app.studymate.app-debug-57:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
-        "source": "com.app.studymate.app-main-59:/mipmap-xhdpi/ic_launcher_foreground.webp"
-    },
-    {
-        "merged": "com.app.studymate.app-debug-57:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.app.studymate.app-main-59:/mipmap-hdpi/ic_launcher.webp"
     },
     {
         "merged": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-debug-57:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
@@ -208,28 +160,28 @@
         "source": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-main-59:\\layout\\custom_nav_header.xml"
     },
     {
-        "merged": "com.app.studymate.app-debug-57:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.app.studymate.app-main-59:/mipmap-hdpi/ic_launcher_round.webp"
-    },
-    {
         "merged": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-debug-57:\\mipmap-xhdpi_ic_launcher_foreground.webp.flat",
         "source": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-main-59:\\mipmap-xhdpi\\ic_launcher_foreground.webp"
     },
     {
-        "merged": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-debug-57:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-main-59:\\drawable\\ic_launcher_background.xml"
+        "merged": "com.app.studymate.app-debug-57:/layout_subject_input.xml.flat",
+        "source": "com.app.studymate.app-main-59:/layout/subject_input.xml"
     },
     {
         "merged": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-debug-57:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-main-59:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-debug-57:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-main-59:\\drawable\\ic_launcher_background.xml"
+    },
+    {
         "merged": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-debug-57:\\menu_details_menu.xml.flat",
         "source": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-main-59:\\menu\\details_menu.xml"
     },
     {
-        "merged": "com.app.studymate.app-debug-57:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.app.studymate.app-main-59:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-debug-57:\\drawable_routine.png.flat",
+        "source": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-main-59:\\drawable\\routine.png"
     },
     {
         "merged": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-debug-57:\\mipmap-xxxhdpi_ic_launcher.webp.flat",

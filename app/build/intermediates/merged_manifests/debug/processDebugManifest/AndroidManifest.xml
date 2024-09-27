@@ -114,6 +114,10 @@
             android:name="com.app.studymate.activities.PdfViewerActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
             android:exported="true" />
+        <activity
+            android:name="com.app.studymate.activities.TimetableActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:exported="true" />
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"

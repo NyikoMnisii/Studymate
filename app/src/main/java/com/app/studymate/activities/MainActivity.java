@@ -285,6 +285,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             }, 250);
         }
 
+        if (id == R.id.action_timetable) {
+            // Launch TimetableActivity when the "Timetable" option is selected
+            Intent intent = new Intent(MainActivity.this, TimetableActivity.class);
+            startActivity(intent);
+            return true;
+        }
+
         else if (id == R.id.action_feedback) {
             Tools.startEmailActivity(this, getResources().getString(R.string.developer_email), "", "");
         }

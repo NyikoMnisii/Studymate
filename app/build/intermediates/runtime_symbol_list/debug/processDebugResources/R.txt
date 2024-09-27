@@ -3179,6 +3179,7 @@ int drawable offline_dialog_default_icon_42dp 0x7f0701f4
 int drawable rate 0x7f0701f5
 int drawable review 0x7f0701f6
 int drawable rotate 0x7f0701f7
+int drawable routine 0x7f0701ff
 int drawable search 0x7f0701f8
 int drawable see 0x7f0701f9
 int drawable share 0x7f0701fa
@@ -3265,6 +3266,7 @@ int id action_search 0x7f09004a
 int id action_share_app 0x7f09004b
 int id action_text 0x7f09004c
 int id action_theme 0x7f09004d
+int id action_timetable 0x7f0902bd
 int id actions 0x7f09004e
 int id activity_chooser_view_content 0x7f09004f
 int id adView 0x7f090050
@@ -3275,6 +3277,7 @@ int id ad_notification_view 0x7f090054
 int id ad_options_view 0x7f090055
 int id ad_unit 0x7f090056
 int id add 0x7f090057
+int id add_subject_button 0x7f0902b3
 int id adjust_height 0x7f090058
 int id adjust_width 0x7f090059
 int id admob_banner_view_container 0x7f09005a
@@ -3435,8 +3438,10 @@ int id flip 0x7f0900f4
 int id floating 0x7f0900f5
 int id forever 0x7f0900f6
 int id fragment_container_view_tag 0x7f0900f7
+int id friday_checkbox 0x7f0902b4
 int id frost 0x7f0900f8
 int id fullscreen_header 0x7f0900f9
+int id generate_timetable_button 0x7f0902b5
 int id ghost_view 0x7f0900fa
 int id ghost_view_holder 0x7f0900fb
 int id gmts_action_button 0x7f0900fc
@@ -3549,6 +3554,7 @@ int id media_view_container 0x7f090166
 int id message 0x7f090167
 int id middle 0x7f090168
 int id mini 0x7f090169
+int id monday_checkbox 0x7f0902b6
 int id month_grid 0x7f09016a
 int id month_navigation_bar 0x7f09016b
 int id month_navigation_fragment_toggle 0x7f09016c
@@ -3720,6 +3726,7 @@ int id rounded 0x7f090211
 int id row 0x7f090212
 int id row_index_key 0x7f090213
 int id row_reverse 0x7f090214
+int id saturday_checkbox 0x7f0902b7
 int id save_non_transition_alpha 0x7f090215
 int id save_overlay_view 0x7f090216
 int id sawtooth 0x7f090217
@@ -3793,8 +3800,10 @@ int id staticPostLayout 0x7f09025a
 int id status_bar_latest_event_content 0x7f09025b
 int id stop 0x7f09025c
 int id stretch 0x7f09025d
+int id subjects_container 0x7f0902b8
 int id submenuarrow 0x7f09025e
 int id submit_area 0x7f09025f
+int id sunday_checkbox 0x7f0902b9
 int id supportScrollUp 0x7f090260
 int id swipeRefreshLayout 0x7f090261
 int id tabMode 0x7f090262
@@ -3827,6 +3836,7 @@ int id textinput_helper_text 0x7f09027c
 int id textinput_placeholder 0x7f09027d
 int id textinput_prefix_text 0x7f09027e
 int id textinput_suffix_text 0x7f09027f
+int id thursday_checkbox 0x7f0902ba
 int id time 0x7f090280
 int id title 0x7f090281
 int id titleDividerNoCustom 0x7f090282
@@ -3846,6 +3856,7 @@ int id transition_position 0x7f09028f
 int id transition_scene_layoutid_cache 0x7f090290
 int id transition_transform 0x7f090291
 int id triangle 0x7f090292
+int id tuesday_checkbox 0x7f0902bb
 int id unchecked 0x7f090293
 int id uniform 0x7f090294
 int id unity_banner_view_container 0x7f090295
@@ -3865,6 +3876,7 @@ int id view_tree_view_model_store_owner 0x7f0902a2
 int id visible 0x7f0902a3
 int id visible_removing_fragment_view_tag 0x7f0902a4
 int id volume_item_container 0x7f0902a5
+int id wednesday_checkbox 0x7f0902bc
 int id west 0x7f0902a6
 int id wide 0x7f0902a7
 int id withText 0x7f0902a8
@@ -4180,6 +4192,7 @@ int layout onesignal_bgimage_notif_layout 0x7f0c00c4
 int layout select_dialog_item_material 0x7f0c00c5
 int layout select_dialog_multichoice_material 0x7f0c00c6
 int layout select_dialog_singlechoice_material 0x7f0c00c7
+int layout subject_input 0x7f0c00d1
 int layout support_simple_spinner_dropdown_item 0x7f0c00c8
 int layout view_banner_ad 0x7f0c00c9
 int layout view_native_ad_label 0x7f0c00ca
@@ -4228,6 +4241,7 @@ int string abc_shareactionprovider_share_with 0x7f120018
 int string abc_shareactionprovider_share_with_application 0x7f120019
 int string abc_toolbar_collapse_description 0x7f12001a
 int string about 0x7f12001b
+int string add_subject 0x7f12017d
 int string admob_app_id 0x7f12001c
 int string androidx_startup 0x7f12001d
 int string app_name 0x7f12001e
@@ -4271,9 +4285,17 @@ int string common_open_on_phone 0x7f120043
 int string common_signin_button_text 0x7f120044
 int string common_signin_button_text_long 0x7f120045
 int string copy_toast_msg 0x7f120046
+int string dayFive 0x7f12017e
+int string dayFour 0x7f12017f
+int string dayOne 0x7f120180
+int string daySeven 0x7f120181
+int string daySix 0x7f120182
+int string dayThree 0x7f120183
+int string dayTwo 0x7f120184
 int string delete 0x7f120047
 int string delete_prompt 0x7f120048
 int string developer_email 0x7f120049
+int string enterSubjects_and_Hours 0x7f120185
 int string error_a11y_label 0x7f12004a
 int string error_icon_content_description 0x7f12004b
 int string exit 0x7f12004c
@@ -4288,6 +4310,7 @@ int string fallback_menu_item_share_link 0x7f120054
 int string fcm_fallback_notification_channel_label 0x7f120055
 int string feedback 0x7f120056
 int string gcm_defaultSenderId 0x7f120057
+int string generate_timetable 0x7f120186
 int string gmts_ad_format_load_success_title 0x7f120058
 int string gmts_ad_load 0x7f120059
 int string gmts_ad_load_in_progress_title 0x7f12005a
@@ -4573,9 +4596,11 @@ int string s5 0x7f120171
 int string s6 0x7f120172
 int string s7 0x7f120173
 int string search_menu_title 0x7f120174
+int string select_study_days 0x7f120187
 int string share 0x7f120175
 int string status_bar_notification_info_overflow 0x7f120176
 int string success_update 0x7f120177
+int string time_table 0x7f120188
 int string txt_ad 0x7f120178
 int string txt_advertiser 0x7f120179
 int string unity_ads_announcement 0x7f12017a
