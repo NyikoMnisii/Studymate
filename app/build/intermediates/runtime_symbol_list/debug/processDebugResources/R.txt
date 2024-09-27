@@ -3374,6 +3374,7 @@ int id customPanel 0x7f0900b4
 int id cut 0x7f0900b5
 int id dark 0x7f0900b6
 int id date_picker_actions 0x7f0900b7
+int id day_title 0x7f0902be
 int id decelerate 0x7f0900b8
 int id decelerateAndComplete 0x7f0900b9
 int id decor_content_parent 0x7f0900ba
@@ -3801,6 +3802,7 @@ int id status_bar_latest_event_content 0x7f09025b
 int id stop 0x7f09025c
 int id stretch 0x7f09025d
 int id subjects_container 0x7f0902b8
+int id subjects_text 0x7f0902bf
 int id submenuarrow 0x7f09025e
 int id submit_area 0x7f09025f
 int id sunday_checkbox 0x7f0902b9
@@ -3838,6 +3840,7 @@ int id textinput_prefix_text 0x7f09027e
 int id textinput_suffix_text 0x7f09027f
 int id thursday_checkbox 0x7f0902ba
 int id time 0x7f090280
+int id timetable_recycler_view 0x7f0902c0
 int id title 0x7f090281
 int id titleDividerNoCustom 0x7f090282
 int id title_template 0x7f090283
@@ -4194,6 +4197,7 @@ int layout select_dialog_multichoice_material 0x7f0c00c6
 int layout select_dialog_singlechoice_material 0x7f0c00c7
 int layout subject_input 0x7f0c00d1
 int layout support_simple_spinner_dropdown_item 0x7f0c00c8
+int layout timetable_item 0x7f0c00d2
 int layout view_banner_ad 0x7f0c00c9
 int layout view_native_ad_label 0x7f0c00ca
 int layout view_native_ad_large 0x7f0c00cb

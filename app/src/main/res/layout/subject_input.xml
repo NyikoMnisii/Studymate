@@ -81,5 +81,13 @@
         android:layout_height="wrap_content"
         android:text="@string/generate_timetable"
         android:layout_marginTop="16dp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/timetable_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
 </LinearLayout>
 

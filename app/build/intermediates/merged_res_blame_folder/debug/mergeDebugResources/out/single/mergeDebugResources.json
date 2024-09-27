@@ -40,6 +40,10 @@
         "source": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-main-59:\\drawable\\search.xml"
     },
     {
+        "merged": "com.app.studymate.app-debug-57:/layout_timetable_item.xml.flat",
+        "source": "com.app.studymate.app-main-59:/layout/timetable_item.xml"
+    },
+    {
         "merged": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-debug-57:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\Cash\\.gradle\\daemon\\8.7\\com.app.studymate.app-main-59:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },

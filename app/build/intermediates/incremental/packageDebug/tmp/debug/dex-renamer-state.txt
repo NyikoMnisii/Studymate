@@ -1,4 +1,4 @@
-#Fri Sep 27 18:20:44 SAST 2024
+#Fri Sep 27 18:50:51 SAST 2024
 base.0=C\:\\Users\\Cash\\Documents\\BICT\\Business\\codecanyon-jYSw9IYK-pdf-study-material-app\\Studymate\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\Cash\\Documents\\BICT\\Business\\codecanyon-jYSw9IYK-pdf-study-material-app\\Studymate\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\Users\\Cash\\Documents\\BICT\\Business\\codecanyon-jYSw9IYK-pdf-study-material-app\\Studymate\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\10\\classes.dex
