@@ -21,11 +21,6 @@
     },
     {
         "icon": "M",
-        "name": "Mathematics P1 MAY-JUNE 2023 ",
-        "url": "https://drive.google.com/uc?id=1YpNztH9QpGN05T0brM_KJu-MPc59EYbt"
-    },
-    {
-        "icon": "M",
         "name": "Mathematics P1 MEMO MAY-JUNE 2023",
         "url": "https://drive.google.com/uc?id=1Ue1u-FEYXRRPbdEvYAIz74-wkVDbIiAL"
     },
@@ -33,6 +28,12 @@
         "icon": "L",
         "name": "MTG Life sciences Study Guide",
         "url": "https://drive.google.com/uc?id=1Jo3EnBAY1eUtDfmDVP3aQVtvjfXn9pc-"
+
+    },
+    {
+        "icon": "P",
+        "name": "Physical Sciences: Physics Definitions",
+        "url": "https://drive.google.com/uc?id=1KVyIwiNZ1gqvNqZUn_gjuYMaIx1CxZLY"
 
     }
 ]
