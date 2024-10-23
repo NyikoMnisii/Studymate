@@ -1,93 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:padding="16dp">
 
+    <!-- Title of the activity -->
     <TextView
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/select_study_days"
-        android:textSize="18sp"
-        android:paddingBottom="8dp" />
+        android:text="Study Timetable"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp"/>
 
-    <CheckBox
-        android:id="@+id/monday_checkbox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/dayOne" />
-
-    <CheckBox
-        android:id="@+id/tuesday_checkbox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/dayTwo" />
-
-    <CheckBox
-        android:id="@+id/wednesday_checkbox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/dayThree" />
-
-    <CheckBox
-        android:id="@+id/thursday_checkbox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/dayFour" />
-
-    <CheckBox
-        android:id="@+id/friday_checkbox"
-        android:layout_width="93dp"
-        android:layout_height="wrap_content"
-        android:text="@string/dayFive" />
-
-    <CheckBox
-        android:id="@+id/saturday_checkbox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/daySix" />
-
-    <CheckBox
-        android:id="@+id/sunday_checkbox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/daySeven" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/enterSubjects_and_Hours"
-        android:textSize="18sp"
-        android:paddingTop="16dp"
-        android:paddingBottom="8dp" />
-
-    <LinearLayout
-        android:id="@+id/subjects_container"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical" />
-
+    <!-- Button to add a new subject -->
     <Button
         android:id="@+id/add_subject_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/add_subject"
-        android:layout_marginTop="16dp" />
+        android:text="Add Subject"
+        android:layout_gravity="center_horizontal"
+        android:padding="8dp"/>
 
+    <!-- Container for dynamically added subjects -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="16dp">
+
+        <LinearLayout
+            android:id="@+id/subjects_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+    </ScrollView>
+
+    <!-- Timetable Display Container -->
+    <LinearLayout
+        android:id="@+id/timetable_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="16dp"/>
+
+    <!-- Button to generate the timetable -->
     <Button
         android:id="@+id/generate_timetable_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/generate_timetable"
-        android:layout_marginTop="16dp" />
-
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/timetable_recycler_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-
+        android:text="Generate Timetable"
+        android:layout_gravity="center_horizontal"
+        android:padding="8dp"
+        android:layout_marginTop="16dp"/>
 </LinearLayout>
-

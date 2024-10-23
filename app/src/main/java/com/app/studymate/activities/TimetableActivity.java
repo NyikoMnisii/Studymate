@@ -4,11 +4,12 @@ import android.annotation.SuppressLint;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.text.InputType;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.SeekBar;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -29,46 +30,51 @@ public class TimetableActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.subject_input);
+        setContentView(R.layout.subject_input); // Main layout
 
         // Initialize views
         subjectsContainer = findViewById(R.id.subjects_container);
         addSubjectButton = findViewById(R.id.add_subject_button);
         generateTimetableButton = findViewById(R.id.generate_timetable_button);
 
-        addSubjectButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                addSubjectInput();
-            }
-        });
+        // Add subject button listener
+        addSubjectButton.setOnClickListener(v -> addSubjectInput());
 
-        generateTimetableButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                generateBalancedTimetable();
-            }
-        });
+        // Generate timetable button listener
+        generateTimetableButton.setOnClickListener(v -> generateBalancedTimetable());
     }
 
-    // Dynamically add a subject input with hours
+    // Function to add a subject input using timetable_item.xml
     private void addSubjectInput() {
-        LinearLayout subjectLayout = new LinearLayout(this);
-        subjectLayout.setOrientation(LinearLayout.HORIZONTAL);
+        // Inflate timetable_item.xml layout
+        LayoutInflater inflater = LayoutInflater.from(this);
+        View subjectView = inflater.inflate(R.layout.timetable_item, subjectsContainer, false);
 
-        EditText subjectInput = new EditText(this);
-        subjectInput.setHint("Subject Name");
-        subjectInput.setLayoutParams(new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1));
+        // Find the Spinner, SeekBar, and TextView in the inflated view
+        Spinner subjectSpinner = subjectView.findViewById(R.id.subject_spinner);
+        SeekBar hoursSlider = subjectView.findViewById(R.id.hours_slider);
+        TextView hoursDisplay = subjectView.findViewById(R.id.hours_display);
 
-        EditText hoursInput = new EditText(this);
-        hoursInput.setHint("Hours");
-        hoursInput.setInputType(InputType.TYPE_CLASS_NUMBER);
-        hoursInput.setLayoutParams(new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1));
+        // Set up listener for the SeekBar to update the hours display
+        hoursSlider.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                hoursDisplay.setText("Hours: " + progress); // Update hours text when slider is moved
+            }
 
-        subjectLayout.addView(subjectInput);
-        subjectLayout.addView(hoursInput);
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+                // Not used
+            }
 
-        subjectsContainer.addView(subjectLayout);
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+                // Not used
+            }
+        });
+
+        // Add the inflated view to the subjects container
+        subjectsContainer.addView(subjectView);
     }
 
     // Function to generate a balanced timetable
@@ -80,19 +86,20 @@ public class TimetableActivity extends AppCompatActivity {
         // Iterate over the subjects container to gather subjects and hours
         int childCount = subjectsContainer.getChildCount();
         for (int i = 0; i < childCount; i++) {
-            LinearLayout subjectLayout = (LinearLayout) subjectsContainer.getChildAt(i);
-            EditText subjectInput = (EditText) subjectLayout.getChildAt(0);
-            EditText hoursInput = (EditText) subjectLayout.getChildAt(1);
+            View subjectLayout = subjectsContainer.getChildAt(i);
 
-            String subjectName = subjectInput.getText().toString();
-            String studyHoursStr = hoursInput.getText().toString();
+            // Find the subject spinner and hours display in the child layout
+            Spinner subjectSpinner = subjectLayout.findViewById(R.id.subject_spinner);
+            SeekBar hoursSlider = subjectLayout.findViewById(R.id.hours_slider);
 
-            if (!subjectName.isEmpty() && !studyHoursStr.isEmpty()) {
-                int studyHours = Integer.parseInt(studyHoursStr);
+            String subjectName = subjectSpinner.getSelectedItem().toString();
+            int studyHours = hoursSlider.getProgress();
+
+            if (!subjectName.isEmpty() && studyHours > 0) {
                 subjectHoursMap.put(subjectName, studyHours);
                 totalHoursPerWeek += studyHours;
             } else {
-                Toast.makeText(this, "Please enter both subject and hours.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Please select a subject and allocate hours.", Toast.LENGTH_SHORT).show();
                 return;
             }
         }
@@ -101,8 +108,9 @@ public class TimetableActivity extends AppCompatActivity {
         displayTimetable(createTimetable(subjectHoursMap, totalHoursPerWeek));
     }
 
+    // Function to create a timetable
     private Map<String, Map<String, Integer>> createTimetable(Map<String, Integer> subjectHoursMap, int totalHoursPerWeek) {
-        int daysAvailable = 7;
+        int daysAvailable = 7; // Days of the week
         int hoursPerDay = totalHoursPerWeek / daysAvailable;
 
         List<String> daysOfWeek = Arrays.asList("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday");
@@ -133,9 +141,11 @@ public class TimetableActivity extends AppCompatActivity {
         return timetable;
     }
 
-    private void displayTimetable(Map<String, Map<String, Integer>> timetable) {
-        LinearLayout timetableContainer = findViewById(R.id.timetable_recycler_view);
+    // Update the view that holds the timetable
+    LinearLayout timetableContainer = findViewById(R.id.timetable_container); // This will hold the timetable entries
 
+    // Function to display the timetable
+    private void displayTimetable(Map<String, Map<String, Integer>> timetable) {
         // Clear any previous timetable entries
         timetableContainer.removeAllViews();
 

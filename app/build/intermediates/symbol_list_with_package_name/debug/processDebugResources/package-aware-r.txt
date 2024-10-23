@@ -68,6 +68,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array subjects_array
 attr SharedValue
 attr SharedValueId
 attr actionBarDivider
@@ -3375,7 +3376,6 @@ id customPanel
 id cut
 id dark
 id date_picker_actions
-id day_title
 id decelerate
 id decelerateAndComplete
 id decor_content_parent
@@ -3440,7 +3440,6 @@ id flip
 id floating
 id forever
 id fragment_container_view_tag
-id friday_checkbox
 id frost
 id fullscreen_header
 id generate_timetable_button
@@ -3492,6 +3491,8 @@ id home
 id homeAsUp
 id honorRequest
 id horizontal_only
+id hours_display
+id hours_slider
 id icon
 id iconImg
 id icon_group
@@ -3556,7 +3557,6 @@ id media_view_container
 id message
 id middle
 id mini
-id monday_checkbox
 id month_grid
 id month_navigation_bar
 id month_navigation_fragment_toggle
@@ -3728,7 +3728,6 @@ id rounded
 id row
 id row_index_key
 id row_reverse
-id saturday_checkbox
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3802,11 +3801,10 @@ id staticPostLayout
 id status_bar_latest_event_content
 id stop
 id stretch
+id subject_spinner
 id subjects_container
-id subjects_text
 id submenuarrow
 id submit_area
-id sunday_checkbox
 id supportScrollUp
 id swipeRefreshLayout
 id tabMode
@@ -3839,9 +3837,8 @@ id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
-id thursday_checkbox
 id time
-id timetable_recycler_view
+id timetable_container
 id title
 id titleDividerNoCustom
 id title_template
@@ -3860,7 +3857,6 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
-id tuesday_checkbox
 id unchecked
 id uniform
 id unity_banner_view_container
@@ -3880,7 +3876,6 @@ id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
 id volume_item_container
-id wednesday_checkbox
 id west
 id wide
 id withText

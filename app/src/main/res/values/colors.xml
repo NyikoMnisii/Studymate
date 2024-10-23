@@ -4,7 +4,7 @@
     <!--primary theme-->
     <color name="color_light_primary">#008080</color>
     <color name="color_light_status_bar">#008080</color>
-    <color name="color_light_accent">#004D80</color>
+    <color name="color_light_accent">#00897B</color>
     <color name="color_light_background">#F0F0F0</color>
     <color name="color_light_text">#333333</color>
     <color name="color_light_icon">@color/color_light_primary</color>

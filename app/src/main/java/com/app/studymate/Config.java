@@ -1,8 +1,8 @@
 package com.app.studymate;
 
-import android.content.Context;
-import java.io.IOException;
-import java.io.InputStream;
+import android.util.Log;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class Config {
 
@@ -11,10 +11,11 @@ public class Config {
 
     /** App Configuration */
     public static final String API_KEY = "6087d76ec1e9be1b68e57a61daccac95243acdda0a9a3bc31b0baa757f4951f4";
-    public static final boolean USE_REMOTE_JSON = false; // Set to false to use local JSON
-    public static final String REMOTE_JSON_URL = "https://demo.poshnool.com/ebook/config.json";
     public static final boolean USE_RANDOM_COLORS_FOR_TEXT_ICONS = false;
     public static final int SPLASH_DELAY = 2000; // Milliseconds
+
+    /** Firebase Firestore instance */
+    private static final FirebaseFirestore db = FirebaseFirestore.getInstance();
 
     /** Ad-Network Configuration */
     public static final String AD_STATUS = "1";
@@ -30,24 +31,28 @@ public class Config {
     public static final int INTERSTITIAL_FREQUENCY = 5;
     public static final Boolean ENABLE_GDPR_EU_CONSENT = true;
 
-    /** Method to read the local JSON file */
-    public static String loadJSONFromAsset(Context context, String fileName) {
-        String json = null;
-        try {
-            InputStream is = context.getAssets().open(fileName);
-            int size = is.available();
-            byte[] buffer = new byte[size];
-            is.read(buffer);
-            is.close();
-            json = new String(buffer, "UTF-8");
-        } catch (IOException ex) {
-            ex.printStackTrace();
-            return null;
-        }
-        return json;
+    /** Method to fetch JSON from Firebase Firestore */
+    public static void fetchRemoteJSON(final OnFetchCompleteListener listener) {
+        // Reference to the Firestore document
+        DocumentReference docRef = db.collection("eMaterials").document("materialsJSON");
+
+        // Fetch the JSON from Firestore
+        docRef.get().addOnSuccessListener(documentSnapshot -> {
+            if (documentSnapshot.exists()) {
+                String json = documentSnapshot.getString("json");
+                listener.onFetchComplete(json);
+            } else {
+                Log.e("Config", "No JSON document found in Firestore");
+                listener.onFetchComplete(null);
+            }
+        }).addOnFailureListener(e -> {
+            Log.e("Config", "Failed to fetch JSON from Firestore", e);
+            listener.onFetchComplete(null);
+        });
     }
 
-
+    /** Listener interface to handle fetch completion */
+    public interface OnFetchCompleteListener {
+        void onFetchComplete(String json);
+    }
 }
-//https://drive.google.com/uc?id=
-//type of link to use in config.json

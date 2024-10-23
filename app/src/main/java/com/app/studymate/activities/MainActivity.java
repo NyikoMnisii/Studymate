@@ -27,10 +27,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
 import com.app.studymate.BuildConfig;
 import com.app.studymate.Config;
 import com.app.studymate.R;
@@ -104,12 +100,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     private void loadData() {
-        if (!Config.USE_REMOTE_JSON) {
-            getDataFromAssets();
+        if (Tools.isOnline(this)) {
+            getDataFromFirestore();  // Load data from Firestore
         } else {
-            loadDataBasedOnInternetConnectivity();
+            loadFromSharedPreferences();  // Load cached data if no internet
         }
     }
+
 
 
 
@@ -137,7 +134,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public void onRefresh() {
         if (Tools.isOnline(this)) {
-            getDataFromServer();
+            getDataFromFirestore();
         } else {
             mSwipeRefreshLayout.setRefreshing(false);
             ToastManager.showToast(this, "No internet connection!");
@@ -146,47 +143,63 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     private void loadDataBasedOnInternetConnectivity() {
         if (Tools.isOnline(this)) {
-            getDataFromServer();
+            getDataFromFirestore();
         } else {
             loadFromSharedPreferences();
         }
     }
-
-    private void getDataFromServer() {
+    private void getDataFromFirestore() {
         mSwipeRefreshLayout.setRefreshing(true);
-        StringRequest stringRequest = new StringRequest(Request.Method.GET, Config.REMOTE_JSON_URL,
-                response -> {
-                    mSwipeRefreshLayout.setRefreshing(false); // Hide refreshing animation
-                    try {
-                        JSONArray array = new JSONArray(response);
-                        itemModelArrayList.clear(); // Clear the existing data
 
-                        for (int i = 0; i < array.length(); i++) {
-                            ItemModel model = new ItemModel();
-                            JSONObject jsonObject = array.getJSONObject(i);
-                            model.setName(jsonObject.getString(JSON_NAME));
-                            model.setIcon(jsonObject.getString(JSON_ICON));
-                            model.setUrl(jsonObject.getString(JSON_URL));
-                            itemModelArrayList.add(model);
-                        }
-
-                        JSONArray jsonArray = convertArrayListToJson(itemModelArrayList);
-                        saveDataToSharedPreferences(jsonArray.toString());
-                        updateRecyclerView();
-
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
-                },
-                error -> {
-                    mSwipeRefreshLayout.setRefreshing(false);
-                    ToastManager.showToast(MainActivity.this, "Error loading data from server");
-                });
-
-        // Creating a request queue
-        RequestQueue requestQueue = Volley.newRequestQueue(this);
-        requestQueue.add(stringRequest);
+        // First, fetch the JSON data from Firestore
+        Config.fetchRemoteJSON(new Config.OnFetchCompleteListener() {
+            @Override
+            public void onFetchComplete(String json) {
+                if (json != null) {
+                    // Parse the JSON to get item URLs or other data
+                    parseAndLoadItems(json);
+                } else {
+                    Log.e("Firestore", "Failed to fetch JSON.");
+                    ToastManager.showToast(MainActivity.this, "Error loading data from Firestore");
+                    mSwipeRefreshLayout.setRefreshing(false);  // Hide refreshing animation
+                }
+            }
+        });
     }
+
+    private void parseAndLoadItems(String json) {
+        try {
+            // Assume the JSON contains an array of item objects
+            JSONArray jsonArray = new JSONArray(json);
+            itemModelArrayList.clear();  // Clear the existing data
+
+            for (int i = 0; i < jsonArray.length(); i++) {
+                JSONObject jsonObject = jsonArray.getJSONObject(i);
+                String name = jsonObject.getString("name");
+                String icon = jsonObject.getString("icon");
+                String url = jsonObject.getString("url"); // URL to Google Drive or any other resource
+
+                // Create an ItemModel and add it to the list
+                ItemModel model = new ItemModel();
+                model.setName(name);
+                model.setIcon(icon);
+                model.setUrl(url);
+                itemModelArrayList.add(model);
+            }
+
+            // Update the RecyclerView with the new data
+            updateRecyclerView();
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+            Log.e("MainActivity", "Failed to parse JSON", e);
+            ToastManager.showToast(MainActivity.this, "Error parsing data.");
+        }
+
+        mSwipeRefreshLayout.setRefreshing(false);  // Hide refreshing animation
+    }
+
+
 
     private JSONArray convertArrayListToJson(ArrayList<ItemModel> itemList) {
         JSONArray jsonArray = new JSONArray();
@@ -286,7 +299,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
 
         if (id == R.id.action_timetable) {
-            // Launch TimetableActivity when the "Timetable" option is selected
             Intent intent = new Intent(MainActivity.this, TimetableActivity.class);
             startActivity(intent);
             return true;

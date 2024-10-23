@@ -39,6 +39,12 @@
     <string name="add_subject">Add Subject</string>
     <string name="generate_timetable">Generate Timetable</string>
 
+    <string-array name="subjects_array">
+        <item>Mathematics</item>
+        <item>Science</item>
+        <item>History</item>
+        <item>English</item>
+    </string-array>
 
 
 </resources>
